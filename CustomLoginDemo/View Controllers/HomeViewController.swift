@@ -11,19 +11,19 @@ import UIKit
 class HomeViewController: UIViewController {
 
     
-    @IBOutlet weak var hipHopButton: UIButton!
-    @IBOutlet weak var popButton: UIButton!
-    @IBOutlet weak var rockButton: UIButton!
-    @IBOutlet weak var indieButton: UIButton!
+//    @IBOutlet weak var hipHopButton: UIButton!
+//    @IBOutlet weak var popButton: UIButton!
+//    @IBOutlet weak var rockButton: UIButton!
+//    @IBOutlet weak var indieButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.\
-        hipHopButton.layer.cornerRadius = 25.0
-        popButton.layer.cornerRadius = 25.0
-        rockButton.layer.cornerRadius = 25.0
-        indieButton.layer.cornerRadius = 25.0
+//        hipHopButton.layer.cornerRadius = 25.0
+//        popButton.layer.cornerRadius = 25.0
+//        rockButton.layer.cornerRadius = 25.0
+//        indieButton.layer.cornerRadius = 25.0
         
         
     }

@@ -48,7 +48,6 @@
                                         </state>
                                         <connections>
                                             <action selector="signUpTapped:" destination="shv-Rh-1oU" eventType="touchUpInside" id="Q5Z-OO-OMo"/>
-                                            <segue destination="en1-is-xEg" kind="show" id="yg5-aI-aEf"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DGi-4I-lNw">
@@ -86,6 +85,7 @@
                         <outlet property="lastNameTextField" destination="PGY-q9-L0p" id="aXQ-go-PJw"/>
                         <outlet property="passwordTextField" destination="Ywc-xb-QnF" id="vx2-mI-4p3"/>
                         <outlet property="signUpButton" destination="pfH-HJ-mk4" id="rS2-Th-lar"/>
+                        <segue destination="en1-is-xEg" kind="show" id="gZM-dc-nfb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pLu-Iu-pwS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -262,9 +262,13 @@
                                 <state key="normal" title="Hip Hop">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="hipHopButton:" destination="gLG-bU-ZYV" eventType="touchUpInside" id="gj3-sK-oq5"/>
-                                    <segue destination="zQK-PE-a15" kind="show" id="Uly-AD-vyT"/>
+                                    <segue destination="zQK-PE-a15" kind="show" id="ZmS-no-tmX"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zp4-ds-Dc4">
@@ -275,9 +279,13 @@
                                 <state key="normal" title="Pop">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="hipHopButton:" destination="gLG-bU-ZYV" eventType="touchUpInside" id="68e-96-rB6"/>
-                                    <segue destination="OeF-dc-Upc" kind="show" id="lug-X9-uZZ"/>
+                                    <segue destination="OeF-dc-Upc" kind="show" id="QhR-0X-vYW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tek-u0-t5n">
@@ -288,38 +296,34 @@
                                 <state key="normal" title="Rock">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="hipHopButton:" destination="gLG-bU-ZYV" eventType="touchUpInside" id="ocG-eS-rB0"/>
-                                    <segue destination="9Kk-MT-1fo" kind="show" id="dV0-4Q-gc1"/>
+                                    <segue destination="9Kk-MT-1fo" kind="show" id="rlO-ps-DCk"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Question" translatesAutoresizingMaskIntoConstraints="NO" id="mEJ-uZ-2lL">
                                 <rect key="frame" x="43" y="108" width="329" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSz-gs-1v3">
-                                <rect key="frame" x="214" y="506" width="150" height="100"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1I-Sz-Tkf">
+                                <rect key="frame" x="222" y="506" width="150" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.97978711473102453" green="1" blue="0.42597021812882774" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Indie">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="hipHopButton:" destination="gLG-bU-ZYV" eventType="touchUpInside" id="HkO-Kq-Oji"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gf-48-Qby">
-                                <rect key="frame" x="214" y="506" width="150" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="Indie">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="hipHopButton:" destination="gLG-bU-ZYV" eventType="touchUpInside" id="yti-8v-g95"/>
-                                    <segue destination="Ra0-2g-KiX" kind="show" id="EYB-Pq-obP"/>
+                                    <segue destination="Ra0-2g-KiX" kind="show" id="h3h-Tk-AQ1"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -327,12 +331,6 @@
                         <viewLayoutGuide key="safeArea" id="k7b-q2-h2a"/>
                     </view>
                     <navigationItem key="navigationItem" id="dEV-Lc-bJr"/>
-                    <connections>
-                        <outlet property="hipHopButton" destination="AOV-xt-h5S" id="0fe-Fl-fl8"/>
-                        <outlet property="indieButton" destination="QSz-gs-1v3" id="yJ5-E6-Djf"/>
-                        <outlet property="popButton" destination="Zp4-ds-Dc4" id="16V-E1-j8E"/>
-                        <outlet property="rockButton" destination="Tek-u0-t5n" id="rIR-5u-dam"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QIZ-rG-Clw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -473,6 +471,7 @@
                         <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="meu-Pf-Pka"/>
                     </view>
+                    <navigationItem key="navigationItem" id="zB6-Aj-eTF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wyw-aC-lZk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -508,6 +507,7 @@
                         <color key="backgroundColor" red="0.65098039215686276" green="0.72156862745098038" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="YG9-RA-RlE"/>
                     </view>
+                    <navigationItem key="navigationItem" id="tjh-K4-oUI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7nx-cz-kBr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -922,7 +922,6 @@
         <!--Navigation Controller-->
         <scene sceneID="VbL-f6-eiR">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9pj-8t-7Ob" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="en1-is-xEg" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="EKa-rA-9KM"/>
@@ -935,12 +934,13 @@
                         <segue destination="gLG-bU-ZYV" kind="relationship" relationship="rootViewController" id="bTZ-UT-SyR"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9pj-8t-7Ob" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2766.666666666667" y="189.50892857142856"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="yg5-aI-aEf"/>
+        <segue reference="l5W-Qe-DIl"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Account" width="166" height="153"/>
