@@ -24,6 +24,7 @@ class SignUpViewController: UIViewController {
     
     @IBOutlet weak var ErrorLabel: UILabel!
     
+    var nameText = ""
     
     
     
@@ -140,12 +141,20 @@ class SignUpViewController: UIViewController {
     }
 
     func transitionToHome() {
+        self.nameText = emailTextField.text!
+        performSegue(withIdentifier: "test", sender: self)
+//        let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
+//
+//        view.window?.rootViewController = homeViewController
+//        view.window?.makeKeyAndVisible()
 
-        let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? HomeViewController
-
-        view.window?.rootViewController = homeViewController
-        view.window?.makeKeyAndVisible()
-
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+      var vc = segue.destination as! AccountViewController
+      vc.finalName = self.nameText
+      //var vctwo = segue.destination as! ThirdViewController
+      //vctwo.finalName = self.nameText
     }
     
 }
